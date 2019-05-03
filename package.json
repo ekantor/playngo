@@ -1,0 +1,19 @@
+{
+  "name": "playngo",
+  "version": "1.0.0",
+  "description": "playngo test",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "pixi.js": "^5.0.0",
+    "tsify": "^4.0.1",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/main.ts -d -p [ tsify --noImplicitAny -t ES2016 ] -o index.js"
+  },
+  "author": "Kántor Endre",
+  "license": "ISC"
+}
